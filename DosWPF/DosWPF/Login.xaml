@@ -1,0 +1,44 @@
+﻿<Window x:Class="DosWPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DosWPF"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="Orange">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Foreground="White" HorizontalAlignment="Left">Kostel SIM</Label>
+            <Label Grid.Row="0" Grid.Column="0" Foreground="White" HorizontalAlignment="Right">1.0.8</Label>
+            <Label Grid.Row="1" Grid.Column="0" Content="* notice" Foreground="OrangeRed" >
+                
+            </Label>
+            <TextBox x:Name="NoticeTxtBox"  IsReadOnly="True" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Grid.Row="1" Height="100" Margin="5,0"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition/>
+                <RowDefinition Height="35"/>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Gray"  FontSize="17" FontFamily="Malgun Gothic">Members Log in</TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="LightGray" FontSize="6" Margin="0, 0, 0, 12" TextAlignment="Center"> Hello World Hello World Hello World Hello World Hello <LineBreak/> World Hello World Hello World</TextBlock>
+            <!--<Image Grid.Row="1" Source="img\Login.png" Width="20" Height="20" HorizontalAlignment="Left"> </Image> 
+            <TextBox Grid.Row="1" Height="20" Width="180"> </TextBox>-->
+               
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>'
+                </Grid.RowDefinitions>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
